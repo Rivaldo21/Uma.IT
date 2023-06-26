@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Revee</string>
+    <string name="texto_bemvindo">Welcome to the Reviews app! Get an interesting experience in exploring product reviews with an attractive card display. See pictures, ratings, short reviews and clicks for more information.</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_no_internet">No_internetActivity</string>
+    <string name="texto_bemvindo2">We hope that this Review application will provide you with an interesting experience in evaluating products and help you make a better purchasing decision or action. Thanks for being part of our community!</string>
+
+</resources>

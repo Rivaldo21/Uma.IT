@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "975215940511",
+    "firebase_url": "https://login-project-386905-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "login-project-386905",
+    "storage_bucket": "login-project-386905.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975215940511:android:9b6e2d38efc039bc1ee3aa",
+        "android_client_info": {
+          "package_name": "com.app.revee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975215940511-lnsntnae8efaef21426d5s7fumrgfu9c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.revee",
+            "certificate_hash": "c694ebe748908ada13636dc80aa74a64673f5010"
+          }
+        },
+        {
+          "client_id": "975215940511-l1celr0f865ia76ta538afaolb8b25mh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB2ehHEKXMvK6CgBosa0A-6KJ10IpaTBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "975215940511-l1celr0f865ia76ta538afaolb8b25mh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

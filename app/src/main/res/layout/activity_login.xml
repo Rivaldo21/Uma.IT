@@ -1,0 +1,157 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#1C4CF3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="530dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/rounded_cardview" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/txtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="Email" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtUsername"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:hint="Password" />
+
+            <TextView
+                android:id="@+id/txtFpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPassword"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:text="Haluha Password?"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPassword"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/button_background"
+                android:text="Login"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnLogin"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/ic_rule_left"
+                android:drawableRight="@drawable/ic_rule_right"
+                android:layout_marginTop="25dp"
+                android:text="Ka Login Ho" />
+
+            <LinearLayout
+                android:id="@+id/btnSocial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp">
+
+                <Button
+                    android:id="@+id/btnFacebook"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtLogin"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_background"
+                    android:drawableLeft="@drawable/ic_facebook"
+                    android:text="Facebook"
+                    android:textAllCaps="false"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btnGoogle"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtLogin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/btnFacebook"
+                    android:background="@drawable/button_background"
+                    android:drawableLeft="@drawable/ic_google"
+                    android:text="Google"
+                    android:textAllCaps="false"
+                    android:textSize="13sp"
+                    app:backgroundTint="#E83F3F" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSocial"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/txtRj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnSocial"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text="Seidauk Rejistu?" />
+
+                <TextView
+                    android:id="@+id/txtRejistu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnSocial"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_toRightOf="@id/txtRejistu"
+                    android:text=" Rejistu Agora"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+       <!-- Bottom Navigation Bar -->
+       <com.google.android.material.bottomnavigation.BottomNavigationView
+           android:id="@+id/bottom_nav_view"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="0dp"
+           android:elevation="30dp"
+           android:layout_gravity="bottom"
+           app:labelVisibilityMode="unlabeled"
+           app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+           app:menu="@menu/bottom_navigation_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

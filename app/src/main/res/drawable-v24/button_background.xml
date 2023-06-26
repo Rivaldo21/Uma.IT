@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#FF4081" /> <!-- Ganti dengan warna saat tombol ditekan -->
+            <corners android:radius="100dp" /> <!-- Ganti dengan radius sudut yang diinginkan -->
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#F06292" /> <!-- Ganti dengan warna saat tombol tidak ditekan -->
+            <corners android:radius="100dp" /> <!-- Ganti dengan radius sudut yang diinginkan -->
+        </shape>
+    </item>
+</selector>

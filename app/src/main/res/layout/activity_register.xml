@@ -1,0 +1,145 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#1C4CF3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="550dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/rounded_cardview" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="Email" />
+
+            <EditText
+                android:id="@+id/txtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtEmail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:hint="Naran" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtUsername"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:hint="Password" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPassword"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_background"
+                android:text="Rejistu"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnLogin"
+                android:drawableLeft="@drawable/ic_rule_left"
+                android:drawableRight="@drawable/ic_rule_right"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="Ka Rejistu Ho" />
+
+            <LinearLayout
+                android:id="@+id/btnSocial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp">
+
+                <Button
+                    android:id="@+id/btnFacebook"
+                    android:layout_width="130dp"
+                    android:drawableLeft="@drawable/ic_facebook"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtLogin"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_background"
+                    android:text="Facebook"
+                    android:textAllCaps="false"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btnGoogle"
+                    android:layout_width="130dp"
+                    android:drawableLeft="@drawable/ic_google"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtLogin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/btnFacebook"
+                    android:background="@drawable/button_background"
+                    android:text="Google"
+                    android:textAllCaps="false"
+                    android:textSize="13sp"
+                    app:backgroundTint="#E83F3F" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSocial"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/txtLga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnSocial"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Iha ona perfil?" />
+
+                <TextView
+                    android:id="@+id/txtLag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnSocial"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_toRightOf="@id/txtLga"
+                    android:text=" Login Agora"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
